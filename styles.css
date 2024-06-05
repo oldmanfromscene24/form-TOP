@@ -7,21 +7,56 @@ body {
     src: url(Norse-Bold.otf);
   }
 
+.logo {
+    position:relative;
+    top: 25vh;
+    display: flex;
+    margin-left: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 .logo>* {
     font-family: norseBold;
     font-size: 5rem;
     height: 5rem;
-    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.logo>img {
+    margin-left: auto;
+}
+
+.logo>p{
+    margin: 0 auto 0 0;
 }
 
 .left {
     height: 100vh;
-    width: 50vw;
+    width: 30vw;
     background-image: url("halie-west-25xggax4bSA-unsplash.jpg");
     background-size:cover;
     color: white;
 }
 
-.left a:link, .left a:visited {
+.credits {
+    position: absolute;
+    bottom: 0px;
+}
+
+.credits a:link, .credits a:visited {
     color:white;
+}
+
+h1, legend {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+fieldset{
+    border: 0;
+    display: flex;
+}
+
+input {
+    display: block;
 }
